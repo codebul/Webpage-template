@@ -1,0 +1,370 @@
+* {box-sizing: border-box; margin: 0; padding: 0;}
+body{ font-family: 'Arial', sans-serif; background-color: #000; color: #757575; display: flex; flex-direction: column;}
+ul{list-style: none;}
+h1,h2,h3,h4,h5{ color: #FFF; }
+a { color: #fff; text-decoration: none; }
+p { margin: 05rem 0; }
+img { max-width: 100%; height: 250px; margin: 20px;}
+
+/*------------Button------------*/
+
+.btn {
+	display: inline-block;
+	background-color: #e50914;
+	color: #FFF;
+	padding: 7px 17px;
+	text-align: center;
+	font-size: 1rem;
+	border: 1px solid #e50914;
+	cursor: pointer;
+	margin-right: 0.5rem;
+	transition: opacity 0.2 ease-in;
+	outline: none;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+	border-radius: 2px;
+	line-height: normal;
+	font-weight: 500;
+}
+
+.btn:hover{
+	opacity: 0.9;
+}
+
+.btn-icon{
+	border: solid #FFF; border-width: 0 2px 2px 0; 
+	display: inline-block; padding: 7px; margin-left: 0.5rem; 
+	transform: rotate(-45deg);-webkit-transform: rotate(-45deg);
+}
+
+.btn-outline{
+	border: 1px solid #FFF; 
+	background-color: transparent; 
+	padding: 1rem 1.25rem; 
+	font-size: 1.5rem; 
+	text-transform: uppercase;	
+}
+
+.header-content h2{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.header-content .btn-xl{
+	font-size: 1.8rem; 
+	padding: 1.2rem 2rem;
+	text-transform: uppercase;
+    height: 60px;
+    width: 100px;
+    background-color: red;    
+}
+
+/*-----------Header--------------*/
+
+.header{
+	 width: 100%; height: 725px; position: relative; border-bottom:  8px solid #222;
+	 background: url("img/img.jpg") no-repeat center center/cover ; 
+}
+.header::after{
+    position: absolute; content: ""; 
+    top: 0; left: 0; width: 100%; 
+    height: 100%; z-index: 1; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    box-shadow: inset 0px 40px 150px #000, inset 0px 40px 150px #000;
+}
+
+.header-top{
+	position: relative;
+	z-index: 2;
+	height: 90px;    
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.header-top .logo{
+    height: 80px;
+	width: 88px; 
+    position: absolute; 
+    top: 1%;     
+    margin: 20px;
+    border-radius: 50%;
+}
+
+
+
+.header-top .btnlogin{
+    margin: auto;
+    margin-right: 1rem;
+    width:100px;
+    height: auto;
+    background-color: orangered;
+    padding: auto;
+    text-align: center;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-top .btnlogin p{
+    margin: 7px;    
+}
+
+
+.header-content{
+	position: relative;
+	z-index: 2;
+	width: 90%;
+	text-align: center;
+	margin: auto;
+	margin-top: 9rem;
+}
+
+.header-content h1{
+	font-size: 3.5rem;
+	font-weight: 700;
+	margin: 0 0 2rem;
+}
+
+.header-content p{
+	color: #FFF;
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin: 0 0 2rem;
+	line-height: 1.25;
+}
+
+/*------MAIN---------*/
+
+main {
+    background-color: #FFFAFA;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.9;
+    width: 100%;    
+}
+
+main section{    
+    margin: 0;
+}
+
+section.content{    
+	width: 100%;	 
+    background-color: #FFFAFA;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+
+
+.content-inner{
+	max-width: 1200px;
+	margin: 0;
+	overflow: hidden;
+	padding: 5rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 33%;
+}
+
+.content-inner .col{
+	width: 40%;
+	float: left;
+    margin-top:  -35px;
+}
+
+.content-inner .col content-img{
+    border-radius: 12px;
+}
+
+
+
+.content-inner .buttons{
+    background: red;
+    height: 1rem;
+    width: 5%;
+    border-radius: 10px;
+    border: 2px solid gray;
+    font-size: 1.8;
+    padding: 10px;
+}
+.content-inner h3{
+    color: cadetblue;
+    margin-bottom: -40px;
+}
+
+main .imageend{
+    text-align: center;
+    padding: 40px;
+}
+
+main .imageend h3{
+    color: darkslategray;
+}
+
+section #hakkimizda{
+    height: 500px;
+    margin: 30px;
+    border: 2px solid black;
+    background-color: red;
+}
+
+section #hakkimizda .imageend img{    
+    border: 2px solid black;    
+}
+
+
+
+section #faq{    
+    margin: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: "Open-Sans", sans-serif;
+}
+
+section #accordionsec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: ;
+    margin-bottom: 20px;
+    padding: 2rem;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 70%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  align-items: center;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+    
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 10px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.1s ease-out;
+  width: 70%;
+}
+
+
+
+/*-----------FOOTER------------*/
+
+#footer{
+	text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    color: #B0E0E6;    
+}
+
+
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
+  margin: 1rem;
+  width: 60%;
+  height: 9%;
+}
+
+
+.flex-container > div{  
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+
+#search {  
+  padding: auto;
+  padding: -10px;
+  justify-content: center; 
+  margin: 0;
+  margin-top: -30px;
+    
+}
+
+#search div{  
+  width: auto;
+  height: auto;  
+  justify-content: center;
+  padding: 0;  
+}
+
+#search input{   
+  width: 100%;
+  height: 80%;  
+  margin: 0;  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:2vw;  
+}
+
+#search button{    
+  width: 100%;
+  height: 80%;  
+  margin: 0;
+  min-width: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:2vw;
+  font-weight: bolder;
+}
+
+#footer h2{
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+#icons {    
+    margin-bottom: -20px !important;   
+    margin: 0;
+    margin-top: 20px;
+    width: 20%;
+    height: 80px;
+}
+
+#icons .fab{
+    color: whitesmoke;
+    margin: 0;
+     
+}
+
+#icons .fab:hover{
+    color: whitesmoke;
+    margin: 0;
+    opacity: 0.8;   
+}

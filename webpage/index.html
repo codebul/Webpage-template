@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+    
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WEBSITE</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+	<!--Font Awesome-->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <script src=""></script>
+    
+</head>   
+    
+<body>
+    
+    <!--HEADER-->
+    
+	<header class="header">
+        
+		<div class="header-top">
+            
+			<a href="#"><img src="img\new1.png" class="logo" alt="Netflix"></a>
+            <a href="#" class="btnlogin"> <p>Sign in</p> </a>
+            
+		</div>
+        
+		<div class="header-content">
+			<h2>Web development<br/ class = "hiteT"></h2>
+			<p>In this HTML tutorial, you will find more than 200 examples. With our online "Try it Yourself" editor, you can edit and test each example yourself!</p>
+			<a href="#" id="headerbtn" class=".btn btn-xl">See more<i class="btn-icon"></i></a>
+		</div>
+        
+	</header>
+    
+    <!--MAIN PART--->
+    
+	<main>
+		
+        <!--Section1--->
+        
+		<section class="content">		
+            
+			<div class="content-inner">
+				<div class="col">
+                    
+					<h3 class="">WEB Design</h3>
+                    
+					<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.  </p>
+                    
+					<a href="#" class="buttons">
+						Click<i class="btn-icon"></i>
+					</a>
+                    
+				</div>
+				<div class="col content-img">
+					<img src="img/img1.jpg" alt= "">				
+			    </div>
+			</div>			
+		
+			<div class="content-inner">
+                <div class="col content-img">
+					<img src="img/img2.jpg" alt= "">				
+			    </div>
+				<div class="col">
+					<h3 class="">Responsive design</h3>
+					<p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.  </p>
+					<a href="#" class="buttons">
+						Click<i class="btn-icon"></i>
+					</a>
+				</div>				
+			</div>
+			
+		</section>	       
+		
+        
+        <section id="hakkimizda">
+           
+              <div class="imageend">
+                <img src="img/img3.jpg" />
+              </div>
+            
+              <div class="imageend">  
+
+                  <h3>ABOUT US</h3>
+                      
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. </p>
+
+                  <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.  </p>
+
+                  <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.  </p>
+
+              </div>          
+  
+        </section>
+        
+        <section >
+            <div id = "accordionsec">
+            <p id = "faq">FAQs</p>
+            <button class="accordion">Section 1</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="accordion">Section 2</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="accordion">Section 3</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            
+            </div>    
+        </section>
+        
+	</main>    
+    
+	<footer id = "footer">
+        
+        <h1>Apply and join us</h1>
+        
+        <p>Enter your email to create or restart your membership.</p>
+            
+        <div class="flex-container" id = "search">            
+          <div style="flex-grow: 8"><input type="search" placeholder="Enter your email adress" /></div>          
+          <div style="flex-grow: 1">
+            <button>Click</button>
+          </div>
+        </div>
+        
+        <h2>Follow us from Social Media</h2>
+        
+        <div class="flex-container" id = "icons">
+          <div><a href="#"><i class="fab fa-facebook"></i></a></div>
+          <div><a href="#"><i class="fab fa-instagram"></i></a></div>
+          <div><a href="#"><i class="fab fa-linkedin"></i></a></div>  
+          <div><a href="#"><i class="fab fa-youtube"></i></a></div>    
+        </div>
+        
+    </footer>
+    
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
+</body>
+</html>
